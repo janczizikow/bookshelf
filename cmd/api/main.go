@@ -6,7 +6,6 @@ import (
 
 	"github.com/janczizikow/bookshelf/internal/database"
 	"github.com/janczizikow/bookshelf/internal/server"
-	_ "github.com/lib/pq"
 )
 
 func main() {
