@@ -25,6 +25,7 @@ func New(db *sql.DB) *Server {
 func (s *Server) Run() error {
 	srv := http.Server{
 		Addr:         ":8090",
+		Handler:      router(s),
 		ReadTimeout:  15 * time.Second,
 		WriteTimeout: 30 * time.Second,
 	}
